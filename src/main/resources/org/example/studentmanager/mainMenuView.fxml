@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.studentmanager.mainMenuController">
+   <children>
+      <ToolBar id="toolBar" nodeOrientation="RIGHT_TO_LEFT" prefHeight="35.0" prefWidth="900.0" stylesheets="@styles.css">
+        <items>
+          <Button fx:id="closeButton" mnemonicParsing="false" onMouseClicked="#closeApp" text="X" />
+            <Button fx:id="maximizeButton" mnemonicParsing="false" onMouseClicked="#maximizeApp" text="□">
+               <font>
+                  <Font />
+               </font></Button>
+            <Button fx:id="minimizeButton" mnemonicParsing="false" text="_" textAlignment="JUSTIFY" onMouseClicked="#minimizeApp"/>
+        </items>
+      </ToolBar>
+      <Button fx:id="classButtonA" layoutX="239.0" layoutY="109.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class A" onMouseClicked="#changeToClassAScene" />
+      <Button fx:id="classButtonB" layoutX="488.0" layoutY="270.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class F" onMouseClicked="#changeToClassFScene" />
+      <Button fx:id="classButtonC" layoutX="239.0" layoutY="189.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class C" onMouseClicked="#changeToClassCScene"/>
+      <Button fx:id="classButtonD" layoutX="488.0" layoutY="189.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class D" onMouseClicked="#changeToClassDScene"/>
+      <Button fx:id="classButtonE" layoutX="488.0" layoutY="109.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class B" onMouseClicked="#changeToClassBScene"/>
+      <Button fx:id="classButtonF" layoutX="239.0" layoutY="270.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="200.0" text="Class E" onMouseClicked="#changeToClassEScene"/>
+      <Button fx:id="exitButton" layoutX="363.0" layoutY="385.0" mnemonicParsing="false" onMouseClicked="#closeApp" prefHeight="60.0" prefWidth="200.0" text="Exit" />
+   </children>
+</Pane>
