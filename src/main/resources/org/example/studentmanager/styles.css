@@ -1,5 +1,51 @@
-#toolBar {
+#backgroundImage{
 
-    fx-color: #282828;
+    -fx-background-color: #1E1E1E;
+
+}
+
+#sideMenu {
+
+    -fx-background-color: #3C3C3C;
+
+}
+
+#sideMenuButtons {
+
+    -fx-background-color: #3C3C3C;
+    -fx-background-radius: 0;
+    -fx-text-fill: #D9D9D9;
+
+}
+
+#sideMenuButtons:hover {
+
+    -fx-background-color: #5F2B93;
+
+}
+
+#toolBar{
+
+    -fx-background-color: #282828;
+
+}
+
+#exitButton, #maximizeButton, #minimizeButton{
+
+    -fx-background-color: #282828;
+    -fx-background-radius: 0;
+    -fx-text-fill: #D9D9D9;
+
+}
+
+#minimizeButton:hover, #maximizeButton:hover {
+
+    -fx-background-color: #3C3C3C;
+
+}
+
+#exitButton:hover {
+
+    -fx-background-color: #A90000;
 
 }
