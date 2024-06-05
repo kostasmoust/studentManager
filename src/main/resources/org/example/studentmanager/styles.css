@@ -49,3 +49,25 @@
     -fx-background-color: #A90000;
 
 }
+
+#backButton {
+
+    -fx-background-color: #5F2B93;
+    -fx-background-radius: 0;
+    -fx-text-fill: #D9D9D9;
+
+}
+
+#backButton:hover {
+
+    -fx-background-color: #341750FF;
+
+}
+
+#deleteButton, #addButton {
+
+    -fx-background-color: #5F2B93;
+    -fx-background-radius: 20;
+    -fx-text-fill: #D9D9D9;
+
+}

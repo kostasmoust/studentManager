@@ -4,6 +4,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
 <Pane id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.studentmanager.mainMenuController">
    <children>
@@ -13,8 +14,8 @@
                <font>
                   <Font name="System Bold" size="16.0" />
                </font></Button>
-            <Button fx:id="minimizeButton" id="minimizeButton" layoutX="744.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="━" onMouseClicked="#minimizeApp"/>
-            <Button fx:id="maximizeButton" id="maximizeButton" layoutX="796.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="❐" onMouseClicked="#maximizeApp">
+            <Button id="minimizeButton" layoutX="744.0" mnemonicParsing="false" onMouseClicked="#minimizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="━" />
+            <Button id="maximizeButton" layoutX="796.0" mnemonicParsing="false" onMouseClicked="#maximizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="❐">
                <font>
                   <Font size="16.0" />
                </font>
@@ -23,11 +24,6 @@
       </Pane>
       <VBox id="sideMenu" layoutY="37.0" prefHeight="463.0" prefWidth="240.0" stylesheets="@styles.css">
          <children>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Home Page">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-            </Button>
             <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 1">
                <font>
                   <Font name="System Bold" size="20.0" />
@@ -59,5 +55,15 @@
                </font>
             </Button>
          </children></VBox>
+      <Text fill="#5f2b93" layoutX="328.0" layoutY="244.0" stroke="WHITE" strokeType="OUTSIDE" strokeWidth="5.0" text="Student" wrappingWidth="342.0">
+         <font>
+            <Font name="Verdana Pro Cond Semibold" size="96.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="416.0" layoutY="332.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="5.0" text="Manager" wrappingWidth="416.0">
+         <font>
+            <Font name="Verdana Pro Cond Semibold" size="96.0" />
+         </font>
+      </Text>
    </children>
 </Pane>

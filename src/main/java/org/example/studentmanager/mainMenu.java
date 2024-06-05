@@ -12,7 +12,7 @@ import java.util.Objects;
 public class mainMenu extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(mainMenu.class.getResource("mainMenuView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(mainMenu.class.getResource("studentInfo.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 500);
         scene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
         stage.initStyle(StageStyle.UNDECORATED);
