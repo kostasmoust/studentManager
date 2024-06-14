@@ -8,7 +8,7 @@ import javafx.stage.Stage;
 
 public class classController {
 
-    Scene studentInfoScene;
+    Scene mainMenuScene;
 
     @FXML
     public void exitApp (MouseEvent event) {
@@ -35,11 +35,11 @@ public class classController {
     @FXML
     public void goToMainMenu (MouseEvent event) {
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(studentInfoScene);
+        stage.setScene(mainMenuScene);
     }
 
-    public void setStudentInfoScene(Scene scene) {
-        this.studentInfoScene = scene;
+    public void setMainMenuScene (Scene scene) {
+        this.mainMenuScene = scene;
     }
 
 
