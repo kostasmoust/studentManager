@@ -21,7 +21,6 @@ public class mainMenuController {
     Button maximizeButton;
 
     public Scene studentInfoScene;
-    public Scene mainMenuScene;
 
     @FXML
     public void exitApp(MouseEvent event) {
@@ -52,22 +51,12 @@ public class mainMenuController {
     //TODO find a way to make the sceneChange work that doesnt brake one or the other.
 
     @FXML
-    public void changeScene(MouseEvent event) throws IOException{
-
-        // Student Info Scene
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("studentInfo.fxml"));
-        Parent classRoot = loader.load();
-        Scene scene = new Scene(classRoot);
-        mainMenuController mainController = loader.getController();
-
+    public void changeScene(MouseEvent event){
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+        stage.setScene(studentInfoScene);
     }
 
-    public void setMainMenuScene(Scene scene) {
-        this.mainMenuScene = scene;
-    }
+    public void setStudentInfoScene(Scene scene) {this.studentInfoScene = scene;}
 
 
 }

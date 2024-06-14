@@ -20,6 +20,21 @@ public class mainMenu extends Application {
         Scene mainMenuScene = new Scene(mainMenuRoot, 900, 500);
         mainMenuScene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
 
+        // StudentInfo Scene
+
+        FXMLLoader classLoader = new FXMLLoader(mainMenu.class.getResource("studentInfo.fxml"));
+        Parent studentInfoRoot = classLoader.load();
+        Scene studentInfoScene = new Scene(studentInfoRoot, 900, 700);
+        studentInfoScene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
+
+
+        // Gives scenes to controllers
+
+        mainMenuController mainContronller = mainLoader.getController();
+        classController studentInfoController = classLoader.getController();
+        mainContronller.setStudentInfoScene(studentInfoScene);
+        studentInfoController.setMainMenuScene(mainMenuScene);
+
         stage.initStyle(StageStyle.UNDECORATED);
         stage.setWidth(900);
         stage.setHeight(500);
