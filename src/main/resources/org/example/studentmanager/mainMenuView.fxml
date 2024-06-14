@@ -14,8 +14,8 @@
                <font>
                   <Font name="System Bold" size="16.0" />
                </font></Button>
-            <Button id="minimizeButton" layoutX="744.0" mnemonicParsing="false" onMouseClicked="#minimizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="━" />
-            <Button id="maximizeButton" layoutX="796.0" mnemonicParsing="false" onMouseClicked="#maximizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="❐">
+            <Button id="minimizeButton" fx:id="minimizeButton" layoutX="744.0" mnemonicParsing="false" onMouseClicked="#minimizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="━"/>
+            <Button id="maximizeButton" fx:id="maximizeButton" layoutX="796.0" mnemonicParsing="false" onMouseClicked="#maximizeApp" prefHeight="36.0" prefWidth="52.0" stylesheets="@styles.css" text="❐">
                <font>
                   <Font size="16.0" />
                </font>
@@ -24,32 +24,32 @@
       </Pane>
       <VBox id="sideMenu" layoutY="37.0" prefHeight="463.0" prefWidth="240.0" stylesheets="@styles.css">
          <children>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 1">
+            <Button fx:id="C1" id="sideMenuButtons" onMouseClicked="#changeScene" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 1">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 2">
+            <Button fx:id="C2" id="sideMenuButtons" onMouseClicked="#changeScene" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 2">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 3">
+            <Button fx:id="C3" id="sideMenuButtons" onMouseClicked="#changeScene" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 3">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 4">
+            <Button fx:id="C4" id="sideMenuButtons" onMouseClicked="#changeScene"  mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 4">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 5">
+            <Button fx:id="C5" id="sideMenuButtons" onMouseClicked="#changeScene" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 5">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
             </Button>
-            <Button id="sideMenuButtons" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 6">
+            <Button fx:id="C6" id="sideMenuButtons" onMouseClicked="#changeScene" mnemonicParsing="false" prefHeight="49.0" prefWidth="240.0" stylesheets="@styles.css" text="Grade 6">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
