@@ -35,15 +35,15 @@
       <TableView fx:id="tableView" id="tableVIew" layoutX="100.0" layoutY="43.0" prefHeight="381.0" prefWidth="700.0" stylesheets="@styles.css">
         <columns>
             <TableColumn fx:id="studentCodeColumn" minWidth="100.0" prefWidth="75.0" text="Students Code" />
-            <TableColumn fx:id="nameColumn" minWidth="100.0" prefWidth="100.0" text="Name" />
-            <TableColumn fx:id="surnnameColumn" minWidth="100.0" prefWidth="88.0" text="Surname" />
+            <TableColumn fx:id="firstNameColumn" minWidth="100.0" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="lastNameColumn" minWidth="100.0" prefWidth="88.0" text="Surname" />
             <TableColumn fx:id="DOBColumn" minWidth="100.0" prefWidth="83.0" text="D.O.B" />
             <TableColumn fx:id="emailColumn" minWidth="100.0" prefWidth="75.0" text="E-mail" />
             <TableColumn fx:id="addressColumn" minWidth="100.0" prefWidth="75.0" text="Address" />
             <TableColumn fx:id="cityColumn" minWidth="100.0" prefWidth="75.0" text="City" />
         </columns>
       </TableView>
-      <Button id="addButton" layoutX="502.0" layoutY="436.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Add Student">
+      <Button id="addButton" onMouseClicked="#addStudentButton" layoutX="502.0" layoutY="436.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Add Student">
          <font>
             <Font size="18.0" />
          </font>

@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -27,12 +28,11 @@ public class mainMenu extends Application {
         Scene studentInfoScene = new Scene(studentInfoRoot, 900, 700);
         studentInfoScene.getStylesheets().add(Objects.requireNonNull(getClass().getResource("styles.css")).toExternalForm());
 
+        // Gives access to certain things to controllers
 
-        // Gives scenes to controllers
-
-        mainMenuController mainContronller = mainLoader.getController();
+        mainMenuController mainController = mainLoader.getController();
         classController studentInfoController = classLoader.getController();
-        mainContronller.setStudentInfoScene(studentInfoScene);
+        mainController.setStudentInfoScene(studentInfoScene);
         studentInfoController.setMainMenuScene(mainMenuScene);
 
         stage.initStyle(StageStyle.UNDECORATED);
