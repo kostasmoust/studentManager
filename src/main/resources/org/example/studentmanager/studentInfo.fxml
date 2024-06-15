@@ -6,8 +6,11 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
-fx:controller="org.example.studentmanager.classController">
+<Pane id="backgroundImage" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0"
+      stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.studentmanager.classController">
    <children>
       <Pane id="toolBar" prefHeight="37.0" prefWidth="900.0" stylesheets="@styles.css">
          <children>
@@ -29,15 +32,15 @@ fx:controller="org.example.studentmanager.classController">
             </Button>
          </children>
       </Pane>
-      <TableView id="tableVIew" layoutX="100.0" layoutY="43.0" prefHeight="381.0" prefWidth="700.0" stylesheets="@styles.css">
+      <TableView fx:id="tableView" id="tableVIew" layoutX="100.0" layoutY="43.0" prefHeight="381.0" prefWidth="700.0" stylesheets="@styles.css">
         <columns>
-          <TableColumn minWidth="100.0" prefWidth="100.0" text="Name" />
-          <TableColumn minWidth="100.0" prefWidth="88.0" text="Surname" />
-            <TableColumn minWidth="100.0" prefWidth="83.0" text="D.O.B" />
-            <TableColumn minWidth="100.0" prefWidth="75.0" text="E-mail" />
-            <TableColumn minWidth="100.0" prefWidth="75.0" text="Students Code" />
-            <TableColumn minWidth="100.0" prefWidth="75.0" text="Address" />
-            <TableColumn minWidth="100.0" prefWidth="75.0" text="City" />
+            <TableColumn fx:id="studentCodeColumn" minWidth="100.0" prefWidth="75.0" text="Students Code" />
+            <TableColumn fx:id="nameColumn" minWidth="100.0" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="surnnameColumn" minWidth="100.0" prefWidth="88.0" text="Surname" />
+            <TableColumn fx:id="DOBColumn" minWidth="100.0" prefWidth="83.0" text="D.O.B" />
+            <TableColumn fx:id="emailColumn" minWidth="100.0" prefWidth="75.0" text="E-mail" />
+            <TableColumn fx:id="addressColumn" minWidth="100.0" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="cityColumn" minWidth="100.0" prefWidth="75.0" text="City" />
         </columns>
       </TableView>
       <Button id="addButton" layoutX="502.0" layoutY="436.0" minHeight="50.0" minWidth="200.0" mnemonicParsing="false" stylesheets="@styles.css" text="Add Student">

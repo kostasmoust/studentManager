@@ -13,14 +13,7 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class mainMenuController {
-    @FXML
-    Button exitButton;
-    @FXML
-    Button minimizeButton;
-    @FXML
-    Button maximizeButton;
-
-    public Scene studentInfoScene;
+    private Scene studentInfoScene;
 
     @FXML
     public void exitApp(MouseEvent event) {
@@ -48,8 +41,6 @@ public class mainMenuController {
 
     }
 
-    //TODO find a way to make the sceneChange work that doesnt brake one or the other.
-
     @FXML
     public void changeScene(MouseEvent event){
         Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
@@ -57,6 +48,5 @@ public class mainMenuController {
     }
 
     public void setStudentInfoScene(Scene scene) {this.studentInfoScene = scene;}
-
 
 }

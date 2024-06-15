@@ -7,6 +7,7 @@ module org.example.studentmanager {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires javafx.graphics;
+    requires annotations;
 
     opens org.example.studentmanager to javafx.fxml;
     exports org.example.studentmanager;
