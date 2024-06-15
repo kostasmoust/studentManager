@@ -29,17 +29,6 @@ public class mainMenuController {
         stage.setIconified(true);
     }
 
-    @FXML
-    public void maximizeApp(MouseEvent event) {
-
-        Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-        if (stage.isMaximized() == true) {
-            stage.setMaximized(false);
-        } else {
-            stage.setMaximized(true);
-        }
-
-    }
 
     @FXML
     public void changeScene(MouseEvent event){
